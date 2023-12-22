@@ -6,6 +6,42 @@
   <title>Risk Roller</title>
 </head>
 <body>
-  Welcome to Risk Roller!
+  <header>
+    Welcome to Risk Roller!
+  </header>
+  <form>
+    <div>
+      # of Attackers
+      <select name="attackers" id="attackers">
+        <% for (let i=1; i<=100; i++) { %>
+          <option value="<%= i %>"><%= i %></option>
+        <% } %>
+      </select>
+    </div>
+    <div>
+      # of Defenders
+      <select name="defenders" id="defenders">
+        <% for (let i=1; i<=100; i++) { %>
+          <option value="<%= i %>"><%= i %></option>
+        <% } %>
+      </select>
+    </div>
+    <div>
+      <button>
+        Roll!
+      </button>
+    </div>
+  </form>
+  <div>
+    <div>
+      Player Wins
+    </div>
+    <div>
+      Attacker Loses # Armies, # Armies Remaining
+    </div>
+    <div>
+      Defender Loses # Armies, # Armies Remaining
+    </div>
+  </div>
 </body>
 </html>
