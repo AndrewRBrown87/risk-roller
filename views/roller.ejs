@@ -6,7 +6,7 @@
   <title>RISK Roller</title>
 
   <!-- App CSS -->
-  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/roller.css" type="text/css" />
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/roll.js"></script>
@@ -15,28 +15,28 @@
   <header>
     RISK Roller
   </header>
-    <div>
-      # of Attackers
-      <select name="attackers" id="attackers">
-        <% for (let i=2; i<=100; i++) { %>
-          <option value="<%= i %>"><%= i %></option>
-        <% } %>
-      </select>
-    </div>
-    <div>
-      # of Defenders
-      <select name="defenders" id="defenders">
-        <% for (let i=1; i<=100; i++) { %>
-          <option value="<%= i %>"><%= i %></option>
-        <% } %>
-      </select>
-    </div>
-    <div>
-      <button onclick="roll()">
-        Roll!
-      </button>
-    </div>
+  <div class="settings">
+    Number of Attackers
+    <select name="attackers" id="attackers">
+      <% for (let i=2; i<=100; i++) { %>
+        <option value="<%= i %>"><%= i %></option>
+      <% } %>
+    </select>
+  </div>
+  <div class="settings">
+    Number of Defenders
+    <select name="defenders" id="defenders">
+      <% for (let i=1; i<=100; i++) { %>
+        <option value="<%= i %>"><%= i %></option>
+      <% } %>
+    </select>
+  </div>
   <div>
+    <button onclick="roll()">
+      Roll!
+    </button>
+  </div>
+  <div class="results">
     <div id="winner">
     </div>
     <div id="attackersRemaining">
