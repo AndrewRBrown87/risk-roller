@@ -15,35 +15,37 @@
   <header>
     RISK Roller
   </header>
-  <div class="settings">
-    Number of Attackers
-    <select name="attackers" id="attackers">
-      <% for (let i=2; i<=100; i++) { %>
-        <option value="<%= i %>"><%= i %></option>
-      <% } %>
-    </select>
-  </div>
-  <div class="settings">
-    Number of Defenders
-    <select name="defenders" id="defenders">
-      <% for (let i=1; i<=100; i++) { %>
-        <option value="<%= i %>"><%= i %></option>
-      <% } %>
-    </select>
-  </div>
-  <div>
-    <button onclick="roll()">
-      Roll!
-    </button>
-  </div>
-  <div class="results">
-    <div id="winner">
+  <main>
+    <div class="settings">
+      Number of Attackers
+      <select name="attackers" id="attackers">
+        <% for (let i=2; i<=100; i++) { %>
+          <option value="<%= i %>"><%= i %></option>
+        <% } %>
+      </select>
     </div>
-    <div id="attackersRemaining">
+    <div class="settings">
+      Number of Defenders
+      <select name="defenders" id="defenders">
+        <% for (let i=1; i<=100; i++) { %>
+          <option value="<%= i %>"><%= i %></option>
+        <% } %>
+      </select>
     </div>
-    <div id="defendersRemaining">
+    <div>
+      <button onclick="roll()">
+        <img src="/images/dice.png" alt="Roll Dice" width="150"/>
+        <div class="centered">Click to Roll!</div>
+      </button>
     </div>
-  </div>
-
+    <div class="results">
+      <div id="winner">
+      </div>
+      <div id="attackersRemaining">
+      </div>
+      <div id="defendersRemaining">
+      </div>
+    </div>
+  </main>
 </body>
 </html>
