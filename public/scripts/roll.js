@@ -1,4 +1,17 @@
 const roll = function(){
+  //spin the dice
+  document.getElementById("dice").classList.add("rotate");
+  document.getElementById("winner").hidden = true;
+  document.getElementById("attackersRemaining").hidden = true;
+  document.getElementById("defendersRemaining").hidden = true;
+
+  setTimeout(() => {
+    document.getElementById("dice").classList.remove("rotate");
+    document.getElementById("winner").hidden = false;
+    document.getElementById("attackersRemaining").hidden = false;
+    document.getElementById("defendersRemaining").hidden = false;
+  }, 500);
+  
   let attackers = document.getElementById("attackers").value;
   let defenders = document.getElementById("defenders").value;
   let attackersLose = 0;
