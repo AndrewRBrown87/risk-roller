@@ -18,16 +18,16 @@
   <main>
     <div class="settings">
       Number of Attackers
-      <select name="attackers" id="attackers">
-        <% for (let i=2; i<=100; i++) { %>
+      <select name="attackers" id="attackers" onchange="reset()">
+        <% for (let i=2; i<=999; i++) { %>
           <option value="<%= i %>"><%= i %></option>
         <% } %>
       </select>
     </div>
     <div class="settings">
       Number of Defenders
-      <select name="defenders" id="defenders">
-        <% for (let i=1; i<=100; i++) { %>
+      <select name="defenders" id="defenders" onchange="reset()">
+        <% for (let i=1; i<=999; i++) { %>
           <option value="<%= i %>"><%= i %></option>
         <% } %>
       </select>
@@ -38,12 +38,16 @@
         <div class="centered">Click to Roll!</div>
       </button>
     </div>
-    <div class="results">
+    <div id="results">
       <div id="winner" hidden>
       </div>
       <div id="attackersRemaining" hidden>
       </div>
       <div id="defendersRemaining" hidden>
+      </div>
+      <div id="summaryHeading" hidden onclick="showSummary()">
+      </div>
+      <div id="summary" hidden>
       </div>
     </div>
   </main>

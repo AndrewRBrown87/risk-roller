@@ -25,6 +25,7 @@ header {
   font-size: 48px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
+  margin-bottom: 5px;
 }
 
 .settings {
@@ -72,7 +73,7 @@ button :hover + .centered {
   }
 }
 
-.results {
+#results {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,6 +91,16 @@ button :hover + .centered {
 
 #defendersRemaining {
   font-size: 18px;
+}
+
+#summaryHeading {
+  color: gray;
+  font-size: 12px;
+}
+
+#summary {
+  color: gray;
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 1024px) {
