@@ -15,7 +15,19 @@
   <header>
     RISK Roller
   </header>
-  <main>
+  <div class="splash">
+    <br>Welcome to RISK Roller!
+    <br><br>An automated dice roller for the board game RISK. Simply select the number of attackers and defenders, then click the button to roll the dice.
+    <br><br>This app will automatically calculate the results of the dice rolls and display the winner, the number of attackers and defenders remaining, and a summary of the dice rolls.
+    <br><br>This app always rolls the maximum number of dice possible for each player. For example, if the attacker has 4 armies, they will roll 3 dice. If the defender has 2 armies, they will roll 2 dice.
+    <br><br>Beware! This app always rolls to completion. Either the attacker or defender will be victorious!
+    <br><br>Click the dice below to get started!
+    <br>
+    <button id="start" onclick="start()">
+      <img src="/images/dice.png" alt="Roll Dice" width="150"/>
+    </button>
+  </div>
+  <main class="hidden" id="main">
     <div class="settings">
       Number of Attackers
       <select name="attackers" id="attackers" onchange="reset()">

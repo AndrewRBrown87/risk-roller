@@ -124,3 +124,16 @@ const showSummary = function(){
   document.getElementById("summaryHeading").innerHTML = "<br>Roll Summary</br>";
   document.getElementById("summary").hidden = false;
 }
+
+const start = function(){
+  //spin the dice
+  document.getElementById("start").classList.add("rotate");
+
+  setTimeout(() => {
+    document.getElementById("start").classList.remove("rotate");
+    document.getElementById("main").classList.remove("hidden");
+    document.getElementsByClassName("splash")[0].classList.add("hidden");
+  }, 500);
+
+  
+}
