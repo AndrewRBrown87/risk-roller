@@ -10,8 +10,6 @@ Beware! This app always rolls to completion. Either the attacker or defender wil
 
 ## Final Product
 
-!["Setup"](/screenshots/setup.png)
-!["Results"](/screenshots/results.png)
 !["Summary"](/screenshots/summary.png)
 
 ## Dependencies
