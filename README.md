@@ -8,8 +8,6 @@ This app always rolls the maximum number of dice possible for each player. For e
 
 Beware! This app always rolls to completion. Either the attacker or defender will be victorious!
 
-## Final Product
-
 !["Summary"](/screenshots/summary.png)
 
 ## Dependencies
