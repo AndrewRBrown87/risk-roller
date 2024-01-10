@@ -21,9 +21,6 @@ const roll = function(){
   let attackersLost = 0;
   let defendersLost = 0;
 
-  console.log("Attackers = " + attackers);
-  console.log("Defenders = " + defenders);
-
   document.getElementById("summaryHeading").innerHTML = "<br>Roll Summary +</br>";
   document.getElementById("summary").innerHTML = "";
 
